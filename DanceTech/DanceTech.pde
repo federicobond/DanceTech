@@ -10,7 +10,6 @@ OscP5 osc;
 Shapes shapes = new Shapes();
 
 void setup() {
-  size(800, 600);
   background(0);
   
   frameRate(60);
@@ -21,6 +20,10 @@ void setup() {
   filterAccx = new OneEuroFilter();
   filterAccy = new OneEuroFilter();
   filterAccz = new OneEuroFilter();
+}
+
+void settings() {
+  fullScreen();
 }
 
 void draw() {
