@@ -1,18 +1,3 @@
-color[] colors = new color[]{
-  #170F1E,
-  #C7904F,
-  #B61218,
-  #4C8493,
-  #D31718,
-  #AB4C26,
-  #640B11,
-  #1D0F29,
-  #E9C663,
-  #BD7897,
-  #0C6953,
-  #CAA639
-};
-
 class Shapes {
   
   void draw(float t, float accx, float accy, float accz) {
@@ -22,7 +7,7 @@ class Shapes {
     float groupRot = t + (accx * 2);
     float generalRot = t;
     groupsCircle(centerDist, memberDist, memberRot,
-      groupRot, generalRot, 10, new color[]{ colors[2], colors[8] }); 
+      groupRot, generalRot, 10, new color[]{ colors[2], colors[5] }); 
     
     centerDist = 160 +  + map(accy, -2, 2, -100, 200);
     generalRot = (1 - t) / 2;
@@ -32,11 +17,11 @@ class Shapes {
     centerDist = 230 +  + map(accy, -2, 2, -100, 200);
     generalRot = t / 3;
     groupsCircle(centerDist, memberDist, memberRot,
-      groupRot, generalRot, 20, new color[]{ colors[5], colors[9] });
+      groupRot, generalRot, 20, new color[]{ colors[4], colors[6] });
     
     centerDist = 300 +  + map(accy, -2, 2, -100, 200);
     generalRot = (1 - t) / 4;
-    groupsCircle(centerDist, memberDist, memberRot, groupRot, generalRot, 15, new color[]{ colors[10], colors[11] });
+    groupsCircle(centerDist, memberDist, memberRot, groupRot, generalRot, 15, new color[]{ colors[7], colors[8] });
   }
 
 }
